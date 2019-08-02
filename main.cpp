@@ -73,9 +73,9 @@ struct simulator_example
 
         VW::setup_examples(all, examples);
 
-        // multi_ex ret{examples.begin(), examples.end()};
-        // examples.delete_v();
-        return examples;
+        multi_ex ret{examples.begin(), examples.end()};
+        examples.delete_v();
+        return ret;
     }
 };
 
